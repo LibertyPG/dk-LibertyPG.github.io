@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty PG - Comfort Made Simple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🏡 LIBERTY PG</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Liberty PG</h1>
+            <p class="tagline">Comfort Made Simple!</p>
+            <p class="description">Looking for a clean, safe, and fully furnished stay? Liberty PG offers the perfect home-like environment for students and working professionals.</p>
+            <button class="cta-btn" onclick="scrollToContact()">Book Your Room Today</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Liberty PG</h2>
+            <p>We provide premium accommodation with world-class amenities at affordable prices. Our prime location offers easy access to colleges, offices, and public transport.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Fully Furnished</h3>
+                    <p>AC Rooms with attached washroom</p>
+                </div>
+                <div class="stat">
+                    <h3>24×7 Service</h3>
+                    <p>Water, Hot Water & Power Backup</p>
+                </div>
+                <div class="stat">
+                    <h3>Security First</h3>
+                    <p>CCTV & Fire Safety Systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2>Our Amenities</h2>
+            <ul class="amenities-list">
+                <li>✔ Fully Furnished AC Rooms with attached washroom</li>
+                <li>✔ High-Speed WiFi</li>
+                <li>✔ 24×7 Water & Hot Water</li>
+                <li>✔ Daily Housekeeping</li>
+                <li>✔ RO Drinking Water</li>
+                <li>✔ Laundry and Ironing</li>
+                <li>✔ Wardrobe & Study Table</li>
+                <li>✔ CCTV Security</li>
+                <li>✔ Home-Style Meals</li>
+                <li>✔ Fire Safety with Alarm system</li>
+                <li>✔ Power Backup</li>
+                <li>✔ Prime location with easy access to colleges, offices & transport</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📞 Call Us</h3>
+                    <p><a href="tel:+917862931746">+91 7862931746</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info.libertypg@gmail.com">info.libertypg@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>4th Floor, Venu Gopal Complex,<br>Mithakhali Six Road,<br>Navrangpura, Ahmedabad - 380006</p>
+                </div>
+            </div>
+            <button class="cta-btn" onclick="call()">Call Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Liberty PG. All rights reserved. | Feel Free, Live Free</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+        function call() {
+            window.location.href = 'tel:+917862931746';
+        }
+    </script>
+</body>
+</html>
