@@ -1,1 +1,243 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Liberty PG</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <h1>Welcome to Liberty PG</h1>\n        <nav>\n            <ul>\n                <li><a href="#gallery">Gallery</a></li>\n                <li><a href="#rooms">Rooms</a></li>\n                <li><a href="#reviews">Reviews</a></li>\n                <li><a href="#contact">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    <main>\n        <section id="gallery">\n            <h2>Gallery</h2>\n            <img src="images/5.jpg" alt="Room 5">\n            <img src="images/6.jpg" alt="Room 6">\n            <img src="images/7.jpg" alt="Room 7">\n            <img src="images/8.jpg" alt="Room 8">\n            <!-- existing images -->\n        </section>\n        <section id="rooms">\n            <h2>Rooms</h2>\n            <!-- existing room details -->\n        </section>\n        <section id="reviews">\n            <h2>Customer Reviews</h2>\n            <blockquote>\n                <p>"This place is amazing! Highly recommend." - John Doe</p>\n            </blockquote>\n            <blockquote>\n                <p>"The staff is very friendly and the rooms are clean." - Jane Smith</p>\n            </blockquote>\n        </section>\n        <section id="location">\n            <h2>Our Location</h2>\n            <iframe src="https://www.google.com/maps/embed/v1/view?key=YOUR_API_KEY&center=23.0202458,72.5794282&zoom=14" allowfullscreen></iframe>\n            <p><a href="https://business.google.com/profile/l/YOUR_BUSINESS_PROFILE">View our Google Business Profile</a></p>\n        </section>\n        <section id="contact">\n            <h2>Contact Us</h2>\n            <!-- contact details -->\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 Liberty PG</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty PG - Feel Free Live Free</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🏡 LIBERTY PG</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Liberty PG</h1>
+            <p class="tagline">Comfort Made Simple!</p>
+            <p class="description">Looking for a clean, safe, and fully furnished stay? Liberty PG offers the perfect home-like environment for students and working professionals.</p>
+            <button class="cta-btn" onclick="scrollToContact()">Book Your Room Today</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Liberty PG</h2>
+            <p>We provide premium accommodation with world-class amenities at affordable prices. Our prime location offers easy access to colleges, offices, and public transport.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Fully Furnished</h3>
+                    <p>AC Rooms with attached washroom</p>
+                </div>
+                <div class="stat">
+                    <h3>24×7 Service</h3>
+                    <p>Water, Hot Water & Power Backup</p>
+                </div>
+                <div class="stat">
+                    <h3>Security First</h3>
+                    <p>CCTV & Fire Safety Systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPANDABLE GALLERY - Add unlimited images in categories -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            
+            <!-- BEDROOM GALLERY -->
+            <div class="gallery-category">
+                <h3>🛏️ Bedrooms</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/bedroom-1.jpg" alt="Bedroom 1" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/bedroom-2.jpg" alt="Bedroom 2" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/bedroom-3.jpg" alt="Bedroom 3" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/bedroom-4.jpg" alt="Bedroom 4" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <!-- Add more bedrooms here -->
+                </div>
+            </div>
+
+            <!-- COMMON AREAS GALLERY -->
+            <div class="gallery-category">
+                <h3>🛋️ Common Areas</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/common-area-1.jpg" alt="Common Area 1" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/common-area-2.jpg" alt="Common Area 2" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/common-area-3.jpg" alt="Common Area 3" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <!-- Add more common areas here -->
+                </div>
+            </div>
+
+            <!-- CORRIDORS & ENTRANCE GALLERY -->
+            <div class="gallery-category">
+                <h3>🚪 Corridors & Entrance</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/corridor-1.jpg" alt="Corridor 1" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/corridor-2.jpg" alt="Corridor 2" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/entrance-1.jpg" alt="Entrance 1" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <!-- Add more corridors/entrance here -->
+                </div>
+            </div>
+
+            <!-- DINING AREA GALLERY -->
+            <div class="gallery-category">
+                <h3>🍽️ Dining Area</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/dining-1.jpg" alt="Dining Area 1" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/dining-2.jpg" alt="Dining Area 2" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <!-- Add more dining areas here -->
+                </div>
+            </div>
+
+            <!-- STUDY ROOM GALLERY -->
+            <div class="gallery-category">
+                <h3>📚 Study Room</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/study-room-1.jpg" alt="Study Room 1" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/study-room-2.jpg" alt="Study Room 2" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <!-- Add more study rooms here -->
+                </div>
+            </div>
+
+            <!-- AMENITIES GALLERY -->
+            <div class="gallery-category">
+                <h3>✨ Amenities</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/amenities-1.jpg" alt="Amenities 1" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/amenities-2.jpg" alt="Amenities 2" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <!-- Add more amenities here -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2>Our Amenities</h2>
+            <ul class="amenities-list">
+                <li>✔ Fully Furnished AC Rooms with attached washroom</li>
+                <li>✔ High-Speed WiFi</li>
+                <li>✔ 24×7 Water & Hot Water</li>
+                <li>✔ Daily Housekeeping</li>
+                <li>✔ RO Drinking Water</li>
+                <li>✔ Laundry and Ironing</li>
+                <li>✔ Wardrobe & Study Table</li>
+                <li>✔ CCTV Security</li>
+                <li>✔ Home-Style Meals</li>
+                <li>✔ Fire Safety with Alarm system</li>
+                <li>✔ Power Backup</li>
+                <li>✔ Prime location with easy access to colleges, offices & transport</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>What Our Guests Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Excellent accommodation with great service and friendly staff!"</p>
+                    <p class="author">- Arjun Patel</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Very clean rooms and the best value for money in Ahmedabad."</p>
+                    <p class="author">- Priya Sharma</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Highly recommended for students! Safe and comfortable environment."</p>
+                    <p class="author">- Rajesh Kumar</p>
+                </div>
+            </div>
+            <div class="google-reviews">
+                <p>⭐ <strong>Google Rating: 4.8/5</strong></p>
+                <a href="https://www.google.com/maps/place/Liberty+PG/@23.0204765,72.4146128,11z/data=!3m1!4b1!4m6!3m5!1s0x395e859c85628d33:0xd4784818b0276ae7!8m2!3d23.0202458!4d72.5794282!16s%2Fg%2F11yqq5sqf2?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="cta-btn">View All Reviews on Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📞 Call Us</h3>
+                    <p><a href="tel:+917862931746">+91 7862931746</a></p>
+                    <p><a href="tel:+919636484074">+91 9636484074</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info.libertypg@gmail.com">info.libertypg@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>4th Floor, Venu Gopal Complex,<br>Mithakhali Six Road,<br>Navrangpura, Ahmedabad - 380006</p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5522064356777!2d72.57942632346908!3d23.020245793948567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e859c85628d33%3A0xd4784818b0276ae7!2sLiberty%20PG!5e0!3m2!1sen!2sin!4v1707398400000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button class="cta-btn" onclick="call()">Call Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Liberty PG. All rights reserved. | Feel Free, Live Free</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+        function call() {
+            window.location.href = 'tel:+917862931746';
+        }
+    </script>
+</body>
+</html>
